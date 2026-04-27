@@ -155,7 +155,8 @@ Use more advanced LLMs
 Deploy the application
 ```
 
-Author
+##Author
+
 Samyak Waikar
 
 ## License
