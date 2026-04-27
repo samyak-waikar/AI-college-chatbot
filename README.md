@@ -26,20 +26,22 @@ It uses:
 ---
 
 ## Architecture
-User Query
-↓
-Frontend (React)
-↓
-FastAPI Backend
-↓
-FAISS (Semantic Search)
-↓
-Relevant Context
-↓
-Ollama (LLM - phi)
-↓
-Final Answer
 
+```text
+User Query
+    ↓
+Frontend (React)
+    ↓
+FastAPI Backend
+    ↓
+FAISS (Semantic Search)
+    ↓
+Relevant Context
+    ↓
+Ollama (LLM - phi)
+    ↓
+Final Answer
+```
 
 ---
 
@@ -68,19 +70,26 @@ Final Answer
 ---
 
 ## Project Structure
+
+```bash
 ai-college-chatbot/
 │
 ├── backend/
-│ ├── main.py
-│ ├── rag_pipeline.py
-│ ├── scraper.py
-│ ├── data/
-│ └── requirements.txt
+│   ├── main.py
+│   ├── rag_pipeline.py
+│   ├── scraper.py
+│   ├── data/
+│   │   └── college_data.txt
+│   └── requirements.txt
 │
 ├── frontend/
-│ └── React App
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
 │
 └── README.md
+```
 
 
 ---
@@ -149,5 +158,6 @@ Deploy the application
 Author
 Samyak Waikar
 
-License
+## License
+
 This project is for educational purposes.
