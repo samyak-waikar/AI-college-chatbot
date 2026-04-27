@@ -92,8 +92,9 @@ ai-college-chatbot/
 ```bash
 git clone https://github.com/samyak-waikar/ai-college-chatbot.git
 cd ai-college-chatbot
-
-Backend Setup
+```
+### 2. Backend Setup
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate   # Windows
@@ -107,35 +108,43 @@ ollama run phi
 
 Start Backend
 uvicorn main:app --reload
-
-Frontend Setup
+```
+### 3. Frontend Setup
+```bash
 cd ../frontend
 npm install
 npm run dev
+```
 
-
-Example Queries
+### Example Queries
+```bash
 What courses are offered?
 What is the admission process?
 What facilities are available?
 Does the college provide placement support?
+```
 
-Limitations
+### Limitations
+```bash
 Uses a lightweight local model (phi), so responses may be simpler
 Works only with provided context (no external knowledge)
 Requires manual data preparation
+```
 
-Key Learnings
+### Key Learnings
+```bash
 Implemented a full RAG pipeline
 Applied prompt engineering to control LLM output
 Built an end-to-end AI system with frontend and backend integration
 Handled noisy data and improved retrieval quality
-
-Future Improvements
+```
+### Future Improvements
+```bash
 Add source citations for answers
 Improve UI/UX
 Use more advanced LLMs
 Deploy the application
+```
 
 Author
 Samyak Waikar
